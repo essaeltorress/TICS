@@ -1,7 +1,13 @@
 document.writeln("una agenda");
-let option = parseInt(prompt ("Escoge una opción del \n 1-Agregar \n 2-Listar \n 3-Salir"));
+let option = parseInt(prompt ("Escoge una opción del \n 1-Nombre \n 2-Apellidos \n 3-Facultad \n 4-Teléfono \n 5-Edad"));
+switch (option) {
+  case 1:
+    let Agregar = prompt ("Agrega tus datos")
+
+}
 let seguir = true;
 let datos = [];
+let contactos= [];
 while (seguir){
     let option = parseInt(prompt ("Escoge una opción del \n 1-Nombre \n 2-Apellidos \n 3-Facultad \n 4-Teléfono \n 5-Edad"));
 switch (option) {
@@ -18,7 +24,7 @@ switch (option) {
     break;
       case 3:
     alert ("Escogiste la opción 3");
-    let Facultad = prompt()
+    let Facultad = prompt("Ingresa tu facultad")
     break;
     default:
     alert ("No recibí una opción válida")
